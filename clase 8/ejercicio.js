@@ -50,7 +50,7 @@ function Cuenta(numeroDeCuenta, saldo, titular) {
     this.deposito = function(cantidadDinero){
         this.saldo = this.saldo + cantidadDinero
         console.log('Deposito realizado con exito, su saldo actual es de: '+ this.saldo);
-    },
+    }, 
     this.extraccion = function (cantidadDinero) {
         if ( cantidadDinero > this.saldo) {
             console.log('Fondos insuficientes');
@@ -58,4 +58,5 @@ function Cuenta(numeroDeCuenta, saldo, titular) {
             this.saldo = this.saldo - cantidadDinero;
             console.log('Extraccion realizada con exito, su saldo actual es '+ this.saldo);
     
-}
+
+        
